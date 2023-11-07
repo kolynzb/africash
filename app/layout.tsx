@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
+import NavBar from "@/components/layout/navbar";
+import { TailwindIndicator } from "@/components/layout/tailwind-indicator";
+import Footer from "@/components/layout/footer";
 
 const clashDisplay = localFont({
   src: [
@@ -107,15 +110,19 @@ export const metadata: Metadata = {
   manifest: "/favicon/site.webmanifest",
 };
 
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={cn(clashDisplay.variable)}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={cn(clashDisplay.variable, "font-clash")}>
+        <NavBar />
+        {children}
+        <Footer />
+        <TailwindIndicator />
+      </body>
     </html>
   );
 }
