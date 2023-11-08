@@ -6,21 +6,29 @@ import testimonials from "@/data/testimonials.json";
 
 const Testimonials = () => {
   return (
-    <AnimatedSlide>
+    <>
       <SectionTitle>
         Still on the fence, here’s what
         <span className="text-accent">our users</span> are saying
       </SectionTitle>
-      {testimonials.map((testimonial, index: React.Key) => (
-        <TestimonialCard
-          key={index}
-          testimonial={testimonial.testimonial}
-          name={testimonial.name}
-          designation={testimonial.designation}
-          avatar={testimonial.avatar}
-        />
-      ))}
-    </AnimatedSlide>
+      <div
+        className="flex overflow-x-scroll pb-10 hide-scroll-bar"
+      >
+      <div className=" flex flex-nowrap lg:ml-40 md:ml-20 ml-10 ">
+        {testimonials.map((testimonial, index: React.Key) => (
+          <div className="inline-block px-3"key={index}>
+      
+            <TestimonialCard
+              testimonial={testimonial.testimonial}
+              name={testimonial.name}
+              designation={testimonial.designation}
+              avatar={testimonial.avatar}
+            />
+          </div>
+        ))}
+      </div>
+      </div>
+    </>
   );
 };
 
