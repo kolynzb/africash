@@ -10,6 +10,35 @@ const CTA = () => {
       <SquigglyLines className="absolute inset-0 scale-[2] z-[1] h-full w-full opacity-[12%] rotate-12" />
       <SquigglyLines className="absolute -right-[601px] scale-[2] z-[1] h-full w-full opacity-[12%] rotate-12" />
       <SquigglyLines className="absolute -left-[610px] scale-[2] z-[1] h-full w-full opacity-[12%] rotate-12" />
+
+      <Image
+        src="/images/phone2.png"
+        className="absolute top-[250px] lg:top-[150px] right-[100px]"
+        alt=""
+        width={300}
+        height={300}
+      />
+      <Image
+        src="/images/bitcoin-front.png"
+        className="absolute top-[250px] lg:top-[150px] left-[100px]"
+        alt=""
+        width={100}
+        height={100}
+      />
+      <Image
+        src="/images/lighting.png"
+        className="absolute bottom-[250px] lg:bottom-[150px] right-[100px]"
+        alt=""
+        width={100}
+        height={100}
+      />
+      <Image
+        src="/images/dollar.png"
+        className="absolute bottom-[250px] lg:bottom-[150px] left-[100px]"
+        alt=""
+        width={100}
+        height={100}
+      />
       <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 className="text-lg font-extrabold text-white   sm:text-4xl">
           Do business with the world
