@@ -93,7 +93,7 @@ export default function NavBar() {
               <div onClick={() => console.log("")}>
                 <Button
                   variant="outline"
-                  className="w-full rounded-full px-6  text-accent hover:text-white border-accent border-2  py-2 md:py-1 lg:w-auto hover:scale-105 ease-in-out transition-all duration-300 "
+                  className="w-full rounded-full px-6  bg-transparent text-accent hover:text-white border-accent border-2  py-2 md:py-1 lg:w-auto hover:scale-105 ease-in-out transition-all duration-300 "
                 >
                   Login
                 </Button>
