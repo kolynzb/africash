@@ -3,10 +3,11 @@ import React from "react";
 import { Button } from "../ui/button";
 import { Download } from "lucide-react";
 import Balancer from "react-wrap-balancer";
+import { AnimatedSlide } from "../animations/slide";
 
 const Hero = () => {
   return (
-    <section className=" flex items-center mt-20 flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+    <AnimatedSlide className=" flex items-center mt-20 flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <img
           className="object-cover lg:object-contain w-full rounded  lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
@@ -33,7 +34,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedSlide>
   );
 };
 
