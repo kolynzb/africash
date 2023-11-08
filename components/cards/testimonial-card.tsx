@@ -11,14 +11,14 @@ type Props = {
 
 const TestimonialCard = (props: Props) => {
   return (
-    <div className="mx-auto mt-8 rounded-lg shadow max-w-md px-10 py-2 border border-gray-200 font-light leading-snug flex flex-col justify-between">
-      <div className="mt-2 relative">
+    <div className="w-[400px] h-[300px] mx-auto mt-8 rounded-lg shadow max-w-md px-10 py-2 border border-gray-200 font-light leading-snug flex flex-col justify-between">
+      <div className="mt-2 relative ">
         <div className="-ml-4">
-          <Quote className="w-8 opacity-25 text-accent" />
+          <Quote className="w-4 opacity-70 text-accent fill-accent" />
         </div>
         {props.testimonial}
         <div className="-mr-4 absolute right-4">
-          <Quote className="w-8 opacity-25 text-accent" />
+          <Quote className="w-4 opacity-70 text-accent fill-accent" />
         </div>
       </div>
 
