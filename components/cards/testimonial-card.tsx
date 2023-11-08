@@ -25,7 +25,7 @@ const TestimonialCard = (props: Props) => {
       <div>
         <div className="mx-auto w-full border  my-8"></div>
         <div className="flex items-center">
-          <div>
+          <figure className="relative">
             <Image
               className="w-12 h-12 rounded-full "
               src={props.avatar}
@@ -33,7 +33,7 @@ const TestimonialCard = (props: Props) => {
               height={50}
               alt={`${props.name}'s name`}
             />
-          </div>
+          </figure>
           <div className="ml-4">
             <div className="font-bold">{props.name}</div>
             <div className="text-sm text-gray-600 mt-1">
