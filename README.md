@@ -1,5 +1,7 @@
 # Africash Landing Page
 
+![Logo](./public/images/logos/dark.png)
+
 - Africash is a digital ecosystem designed to make Africa one. It's goal is to bring the dream of financial inclusion to all people across the continent.
 
 ## Technologies
